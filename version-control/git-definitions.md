@@ -9,7 +9,7 @@
 #A branch is a separate folder that we create within a repo to add on features to our project. We use branches so that we aren't making changes directly to our master code, which in turns allows us to make as many features without disturbing the foundation of our code. 
 
 * What is a commit? What makes a good commit message?
-# A commit is a save point that a developer does when they're made changes files within a repo. A good commit message is one that is clear and descriptive about what changes were made.
+#A commit is a save point that a developer does when they're made changes files within a repo. A good commit message is one that is clear and descriptive about what changes were made.
 
 * What is a merge conflict?
-# A merge conflict is an error that occurs when you're trying to merge or download a local branch with the master file. 
+#A merge conflict is an error that occurs when you're trying to merge or download a local branch with the master file. 
