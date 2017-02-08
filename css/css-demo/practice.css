@@ -1,14 +1,19 @@
-.contact-info{
-  font-size: .8em;
-}
-
-.job{
+.job {
   background-color: #e9e5dc;
   border-radius: 25px;
   padding-bottom: 10px;
 }
 
-.list{
+.list {
   font-size: .8em;
 }
 
+
+#3.2 examples
+#3.2 pseudoselector
+.htmlelement:hover {
+  color: #00ff99;
+}
+
+#3.2 child
+ul li {font-size: 10%;}
