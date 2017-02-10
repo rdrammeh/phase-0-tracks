@@ -14,11 +14,22 @@ cite {
   padding-left: 0px;
 }
 
+#external-links {
+  width: 20%;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
 img {
   width: 100%;
+}
+
+body {
+  max-width: 960px;
+  min-width: 200px;
 }
 
 figure {
@@ -30,3 +41,31 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+
+main {
+  width: 756px;
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+    max-width: 960px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+ body {
+   font-size: 10pt;
+   word-wrap: normal;
+ }
+
+}
+
+@media screen and (max-width: 1000px) {
+ img {
+   border-radius: 100px;
+ }
+/*media queries allows your certain stylistics changes to be hidden/appear until the user is using the pre-determined screen parameters.
