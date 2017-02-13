@@ -1,0 +1,18 @@
+body {
+  margin: 0 auto;
+}
+
+#octopus {
+  margin-top: 150px;
+}
+
+#glasses {
+  position: relative;
+  bottom: 50px;
+}
+
+#hat {
+  position: relative;
+  bottom: 75px;
+  z-index: 1px; 
+}
