@@ -1,0 +1,32 @@
+.column-1 {
+  background-color: beige;
+  display: inline-block;
+  width: 45%;
+  margin-left: 2%;
+  font-size: 13pt;
+  font-family: verdana;
+}
+
+.column-2 {
+  background-color: gray;
+  display: inline-block;
+  width: 45%;
+  margin-left: 5%;
+  font-size: 13pt;
+  vertical-align: top;
+  font-family: verdana;
+}
+
+img {
+  width: 8%;
+  height: 8%;
+}
+
+h1 {
+  display: inline-block;
+}
+
+footer {
+  margin-top: 5%;
+  margin-left: 30%;
+}
