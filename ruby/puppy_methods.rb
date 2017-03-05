@@ -22,6 +22,10 @@ class Puppy
     puts "*sit*"
   end
 
+  def initialize
+    puts "Initializing new puppy instance..."
+  end
+
 end
 
 # ////////// DRIVER CODE //////////
