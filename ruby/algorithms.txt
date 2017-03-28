@@ -10,7 +10,7 @@ an "up" button and "down" button
     + push number that is a greater value than your current floor
 - If going down:
     + push number that is a lower value than your current floor 
-- When you decide what floor you're going to
+- When you decide what floor (#{floor_number}) you're going to
     + Push the button of the floor number you want to go to 
     + Corresponding number will light up in blue 
     + doors will close after you push the button 
