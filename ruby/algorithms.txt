@@ -23,16 +23,23 @@ an "up" button and "down" button
     + Elevator doors will open 
 - Exit the elevator 
 
-#Waking Up
-- Every morning 
-    + Alarm sound goes off
-        * The clock shows a "snooze" button and a "stop" button
+#Waking Up 
+- Must get out of bed by 8am or else will be late for work 
+- Every weekday (M-F) morning at 7:30am alarm music goes off
+- The clock shows a "snooze" button and a "stop" button
     + If you are still tired 
-        * hit snooze for 10 mins 
-        * alarm will sound again in exactly 10 mins and repeat everything above
-    + Else if you are ready to wake up 
-        * hit stop
+        * hit "snooze" button 
+        * alarm will sound again in exactly 10 mins and repeat the above 
+        * Alarm will sound 10 minutes later from hitting snooze
+    + If alarm goes off at 8am or later time  
+        * "snooze" button is disabled 
+        * only option to see if "stop" button 
+        * Alarm will sound until "stop" button is pressed
+    + If you are ready to wake up 
+        * hit "stop"
+        * Alarm will stop playing music and will be disabled until 7:30am the following weekday morning
     + If no response 
         * Alarm will continue to play until the "snooze" or "stop" button is pressed 
+    
 
 
