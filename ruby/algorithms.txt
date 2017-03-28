@@ -1,22 +1,24 @@
 #Robot Taking the Elevator 
 - Walk in front of the metal doors until you a see
 an "up" button and "down" button
-- Push the "up" or "down" button
-    + Check to see what floor you are currently on 
+- Check to see what floor you are currently on to determine whether you want to go up or down from that floor
+    + Push the "up" or "down" button
 - Enter elevator when doors open 
-- Turn around to face the buttons
+- Turn around to face the buttons 
     + Buttons will either be on your right or left side 
 - If going up:
-    + push number higher than your current floor
+    + push number that is a greater value than your current floor
 - If going down:
-    + push number lower than your current floor 
+    + push number that is a lower value than your current floor 
 - When you decide what floor you're going to
     + Push the button of the floor number you want to go to 
     + Corresponding number will light up in blue 
     + doors will close after you push the button 
 - Look up and watch the floor numbers go up or down 
     + Each new floor will make a "ding" sound 
+    + Each new floor number will be + or - the one previous to it
 - When you arrive at your floor
+    + Elevator will say "Now arriving on Floor #{floor_number}"
     + Elevator will make a loud "ding" sound
     + Elevator doors will open 
 - Exit the elevator 
