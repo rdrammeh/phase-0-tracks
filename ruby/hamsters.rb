@@ -1,4 +1,4 @@
-## Hamster Sanctuary 
+## Hamster Sanctuary Data List ##
 
 puts "What is the hamster's name?"
 hamster_name = gets.chomp
