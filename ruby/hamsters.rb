@@ -1,3 +1,5 @@
+## Hamster Sanctuary 
+
 puts "What is the hamster's name?"
 hamster_name = gets.chomp
 puts "Hamster's name is #{hamster_name}" 
@@ -29,3 +31,9 @@ estimated_age = gets.chomp
     puts "#{hamster_name} is #{estimated_age} years old"
     estimated_age = estimated_age.to_i
   end
+
+puts "Hamster Name: #{hamster_name}"
+puts "Volume Level: #{volume_level}"
+puts "Fur Color: #{fur_color}"
+puts "Good for Adoption?: #{good_candidate}"
+puts "Estimated Age: #{estimated_age}"
