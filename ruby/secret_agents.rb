@@ -9,16 +9,19 @@
 # Print str 
 
 
-# index = 0
-# str = "abc"
-# 
-# while index < str.length
-#   str[index] = str[index].next
-#   index += 1
-# end
-# 
-# p str
-# 
+def encrypt(str)
+index = 0 
+while index < str.length
+  if str[index] == "z"
+    str[index] = "a"
+  else 
+    str[index] = str[index].next
+  end 
+  index += 1 
+end
+puts "#{str}"
+return str 
+end 
 
 # decrypt #
 # Set index to 0 
