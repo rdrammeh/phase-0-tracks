@@ -30,12 +30,14 @@ end
 # Subtract the index of that current from 1 
 # Print that new string 
 
-index = 0
-str = "bcd"
-
+def decrypt(str)
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+index = 0 
 while index < str.length
-  str[index] = str[index] - 1
-  index -= 1
+  char = str[index]
+  str[index] = alphabet[alphabet.index(char)-1]
+  index += 1 
 end
-
-p str
+puts "#{str}"
+return str 
+end 
