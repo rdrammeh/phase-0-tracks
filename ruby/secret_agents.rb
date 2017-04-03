@@ -23,12 +23,14 @@ puts "#{str}"
 return str 
 end 
 
-# decrypt #
-# Set index to 0 
-# Assign a string "bcd" to a variable
-# Find the index of the string 
-# Subtract the index of that current from 1 
-# Print that new string 
+# def encrypt(str)
+# index = 0 
+# while index < str.length 
+#   str[index] = str[index].next
+#   index += 1
+# end 
+# puts "#{str}"
+# end  
 
 def decrypt(str)
 alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -41,3 +43,13 @@ end
 puts "#{str}"
 return str 
 end 
+
+
+encrypt("abc") 
+encrypt("zed") 
+decrypt("bcd") 
+decrypt("afe")
+decrypt(encrypt("swordfish"))
+
+### Nested Method ###
+#This nested method call works because the argument we gave is within the parameters of both the encrypt and decrypt method
