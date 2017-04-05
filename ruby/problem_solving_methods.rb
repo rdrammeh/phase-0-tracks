@@ -3,7 +3,7 @@
 numbers = [5, 17, 23, 36, 42, 58, 66, 78, 80]
 
 def search_array(arr, x)
-  numbers = [5, 17, 23, 36, 42, 58, 66, 78, 80]
+  numbers = arr
   index = 0 
   while index < numbers.length
     numbers.each do |search|
