@@ -9,4 +9,30 @@
 #Use control flow to print the hash if their are no changes and to prompt user for more info if their are changes 
 #Print the final hash
 
+#--- Get client info ---#
+puts "What is the client's name?"
+name = gets.chomp
 
+puts "How old is the client?"
+age = gets.chomp.to_i
+
+puts "Number of Children"
+children = gets.chomp.to_i
+
+puts "Decor theme:"
+decor_theme = gets.chomp
+
+puts "One thing they loathe the most:"
+loathe = gets.chomp
+
+#--- put client info into a hash ---#
+client_info = {
+  name: "#{name}",
+  age: age,
+  children: children,
+  decor_theme: "#{decor_theme}",
+  loathe: "#{loathe}"
+}
+
+puts "Here is #{name}'s information:"
+p client_info
