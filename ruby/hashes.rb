@@ -36,3 +36,21 @@ client_info = {
 
 puts "Here is #{name}'s information:"
 p client_info
+
+#--- allow the client to update their info ---#
+
+puts "Do you want to update this information? (yes/no)"
+update_info = gets.chomp 
+  if update_info == "no"
+    puts "Great you're all set!"
+  else
+    puts "What do you want to update (enter symbol name)?"
+    key_to_update = gets.chomp.to_sym
+    
+    puts "What should #{key_to_update}'s new value be?"
+    new_key_value = gets.chomp 
+    client_info[key_to_update] = new_key_value
+  end
+
+puts "Here is a final list of #{name}'s information:"
+p client_info
