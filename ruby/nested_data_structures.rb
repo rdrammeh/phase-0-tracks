@@ -1,7 +1,7 @@
 #--- 5.4 Nested Data Structures ---#
 
 restaurant_menu = {
-  entre: {
+  entree: {
     vegetarian: {
       salad: [
         'Kale',
@@ -70,8 +70,15 @@ restaurant_menu = {
   }
 }
 
-#call an item in a list 
-#call another item on a list 
-#add an item to a list 
-#change an item 
+#Call an item on the drinks list
+p restaurant_menu[:drinks][:alcohol][:red_wine][0]
 
+#Call all of the wings options
+p restaurant_menu[:entree][:meat][:wings]
+
+#Add an item to the coffee list
+p restaurant_menu[:drinks][:caffine][:coffee].push('Americano')
+
+#Change an item on the dessert Menu
+restaurant_menu[:dessert][:cake][1] = 'Chocolate Mousse'
+p restaurant_menu[:dessert][:cake]
