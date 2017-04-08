@@ -28,13 +28,13 @@
 "The mystery of the missing first letter".delete "T"
 => "he mystery of the missing first letter"
 
-"Elementary,    my   dear        Watson!".strip
+"Elementary,    my   dear        Watson!".squeeze(" ")
 => "Elementary, my dear Watson!"
 
 "z".sum
 => 122 
 # (What is the significance of the number 122 in relation to the character z?)
-# 122 is the checksum of the characters in the string
+# 122 is the ASCII(American Standard Code for Informative Interchange) number for the character z lowercase
 
 "How many times does the letter 'a' appear in this string?".count "a"
 => 4
