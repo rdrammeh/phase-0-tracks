@@ -23,8 +23,9 @@ class Puppy
     puts "*sit*"
   end
 
+#--- RELEASE 1: DECLARE AN INITIALIZE METHOD ---#
   def initialize
-    puts "Initializing new puppy..."
+    puts "Initializing new Puppy instance..."
   end
 
 end
@@ -37,38 +38,36 @@ shiloh.roll_over
 shiloh.dog_years(60)
 shiloh.sit
 
-# ////////// DRIVER CODE //////////
-# 
-# class Exercise 
-# 
-#   def cardio(hours)
-#     puts "I have to complete #{hours} hours of cardio this week"
-#   end
-# 
-#   def strength(box_jumps)
-#     box_jumps.times do puts "box jump!"
-#     end
-#     puts "I completed #{box_jumps} box jumps this week!"
-#   end 
-# 
-#   def initialize 
-#     puts "Initializing new Exercise instance..."
-#   end
-# 
-# end
-# 
-# # ////////// DRIVER CODE //////////
-# instance = Exercise.new
-# instance.cardio(7)
-# instance.strength(10)
-# 
-# array = []
-#   50.times do instance = Exercise.new
-#     array.push(instance)
-#   end
-# 
-#   array.each do |workout|
-#     workout.creatfcardio(7)
-#     workout.strength(10)
-#   end
-# 
+#--- RELEASE 2: WRITE YOUR OWN CLASS ---#
+
+class Personal_Trainers 
+
+  def cardio(name, hours)
+    puts "#{name} completed #{hours} hours of cardio this week!"
+  end
+
+  def strength(box_jumps)
+   puts "I also did #{box_jumps} box jumps!"
+  end 
+
+  def initialize 
+    puts "Initializing new Exercise instance..."
+  end
+
+end
+
+# ////////// DRIVER CODE FOR RELEASE 2 //////////
+kimmy = Personal_Trainers.new
+kimmy.cardio("Kimmy", 5)
+kimmy.strength(100)
+
+trainers = []
+  50.times do
+    trainers << Personal_Trainers.new
+  end
+
+  trainers.each do |workout|
+    workout.cardio("Kimmy", 5)
+    workout.strength(100)
+    puts "____________________"
+  end
