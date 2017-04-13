@@ -1,102 +1,96 @@
+grocery_list = "carrots apples cereal pizza bananas celery"
+
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps: 
-  # take string turn to array 
-  # iterate over the array and add to hash 
-  # set default quantity
-  # print the list to the console [can you use one of your other methods here?]
-# output: hash
-def create_a_list(items)
-  items = items.split
-  grocery_list = {} #same as saying hash.new 
-  items.each do |item|
-    grocery_list[item] = 1
-  end 
-  puts grocery_list
-  grocery_list
+  # 1. Create an empty hash and define it
+  # 2. Add items to the hash from the list
+  # 3. Set default quantity for all items in the list to 0
+  # 4. Print the list to the console with Print a List method below
+# output: Hash
+
+def create_list(list)
+    grocery_items = {}
+    new_list = list.split(" ")
+
+    new_list.each do |item|
+        grocery_items[item] = 0
+    end
+    grocery_items
 end
 
 
 # Method to add an item to a list
 # input: list, item name, and optional quantity
-# steps:
-  # add item name to the optional quantity to the list 
-# output: the list 
-def add_item_to_list(list, item, quantity = 1)
-  list[item] = quantity 
-  list 
+# steps: 
+  # 1. Add new key and value to the hash
+  # 2. Print the list to the console with the Print a List method below
+# output: Hash with updated keys and values
+
+grocery_items = create_list(grocery_list)
+def add_item(hash, item_name, quantity = 0)
+    hash[item_name] = quantity
+    hash
 end
+
+p add_item(grocery_items, "peanut butter")
+p grocery_items
+
 
 
 # Method to remove an item from the list
-# input: list and item name
+# input: list, item name
 # steps:
-  # delete item name from list 
-# output: shorter list
+  # 1. Find the item in the list by key
+  # 2. Delete the key from the hash (quantity will be removed along with the key)
+  # 3. Print the list to the console with the Print a List method below
+# output: Hash with remaining keys and values
 
-def remove_an_item(list, item)
-  list.delete(item)
-  list
+def remove_item(hash, item_name)
+  hash.delete(item_name)
+  hash
 end
+
+p remove_item(grocery_items, "celery")
+p grocery_items
 
 
 # Method to update the quantity of an item
-# input: list, item name, optional quantity 
+# input: list, item name, and quantity to update
 # steps:
-  # reset the item's quantity 
-# output: updated hash 
+  # 1. Find the item in the list by key
+  # 2. Reassign value by accessing key(item)
+  # 3. Print the list to the console with the Print a List method below
+# output: Hash with updated keys and values
 
-def update_item_quantity(list, item, quantity)
-  list[item] = quantity
-  list
+def update_quantity(hash, item_name, quantity)
+  hash[item_name] = quantity
+  hash
 end
+
+p update_quantity(grocery_items, "apples", 7)
+p grocery_items
+
 
 # Method to print a list and make it look pretty
-# input: list 
+# input: list
 # steps: 
-  # puts list 
-# output: n/a
+  # 1. Give list a title "Grocery List"
+  # 2. Add padding space below the title " "
+  # 3. Iterate over the list hash for each item "Item qty 1."
+# output: Printed list using the hash values
 
-def print_list(list)
-  list
+def pretty_list(hash)
+  puts "Grocery List:"
+  puts " "
+  hash.each do |item_name, quantity|
+    puts "#{item_name}: #{quantity}"
+  end
 end
 
+p pretty_list(grocery_items)
 
-# ///////// DRIVER CODE ////////////
-grocery_list = create_a_list("carrots apples cereal pizza")
-puts grocery_list 
 
-grocery_list = add_item_to_list(grocery_list, "Lemonade", 2)
-grocery_list = add_item_to_list(grocery_list, "Tomatoes", 3)
-grocery_list = add_item_to_list(grocery_list, "Onions", 1)
-grocery_list = add_item_to_list(grocery_list, "Ice Cream", 4)
-puts grocery_list
 
-grocery_list = remove_an_item(grocery_list, "Lemonade")
-puts grocery_list
-
-grocery_list = update_item_quantity(grocery_list, "Ice Cream", 1)
-puts grocery_list
-
-puts print_list(grocery_list)
-
-# /////////// REFLECT //////////
-# What did you learn about pseudocode from working on this challenge?
-# pseudocoding helps you understand what you need to setup your methods 
-
-# What are the tradeoffs of using arrays and hashes for this challenge?
-# Using both allows you to setup a consistent, clean structure. 
-
-# What does a method return?
-# A method returns a value from the last statement
-
-# What kind of things can you pass into methods as arguments?
-# required arguments and arguments with default a value
-
-# How can you pass information between methods?
-# By using the same arguments and structuring your drive code to use the most updated information
-
-# What concepts were solidified in this challenge, and what concepts are still confusing?
-# how to setup methods based on the information we're looking to return. I still need help with setting up the ruby eyntax
 
 
