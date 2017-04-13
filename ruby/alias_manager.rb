@@ -1,4 +1,43 @@
 
+#for each step verivfy that you are doing the correct maniuplation
+#possibly consider how to handle capital letters, either you will downcase the name in the begininng and then capitalize each word at the end or 
+#have yoru vowel and consonant swappers handle capital letters
+def create_spy_alias(name)
+  swapped_name = name_swapper(name) #-> 'Torres Felicia'
+  swapped_vowels = vowel_swapper(swapped_name) #-> 'Turris Femidia'
+  swapped_consonants = consonatn_swapper(swapped_vowels) #=> 'Vussit Gimodoe'
+  swapped_consonants
+end
+
+
+
+loop do
+
+#get the user input
+# break if input == 'some pharse'
+#make the alias
+# save the alias in a data strucrue; hint use a hash key ->
+
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+p create_spy_alias('Felicia Torres') == 'Vussit Gimodoe'
+
+
+
+#=======================================================
 loop do 
   
   # Ask the user for their name
