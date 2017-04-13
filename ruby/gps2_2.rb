@@ -1,4 +1,5 @@
-grocery_list = "carrots apples cereal pizza bananas celery"
+# grocery_list = "carrots apples cereal pizza bananas celery"
+grocery_list = "Lemonade, Tomatoes, Onions, Ice Cream"
 
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
@@ -11,7 +12,7 @@ grocery_list = "carrots apples cereal pizza bananas celery"
 
 def create_list(list)
     grocery_items = {}
-    new_list = list.split(" ")
+    new_list = list.split(%r{,\s*})
 
     new_list.each do |item|
         grocery_items[item] = 0
@@ -33,8 +34,8 @@ def add_item(hash, item_name, quantity = 0)
     hash
 end
 
-p add_item(grocery_items, "peanut butter")
-p grocery_items
+# p add_item(grocery_items, "peanut butter")
+# p grocery_items
 
 
 
@@ -51,8 +52,8 @@ def remove_item(hash, item_name)
   hash
 end
 
-p remove_item(grocery_items, "celery")
-p grocery_items
+# p remove_item(grocery_items, "celery")
+# p grocery_items
 
 
 # Method to update the quantity of an item
@@ -68,8 +69,8 @@ def update_quantity(hash, item_name, quantity)
   hash
 end
 
-p update_quantity(grocery_items, "apples", 7)
-p grocery_items
+# p update_quantity(grocery_items, "apples", 7)
+# p grocery_items
 
 
 # Method to print a list and make it look pretty
@@ -88,9 +89,24 @@ def pretty_list(hash)
   end
 end
 
+# p pretty_list(grocery_items)
+
+
+
+##-- RELEASE 2: TEST YOUR SOLUTION --##
+puts "Here is our grocery list"
+p create_list(grocery_list)
+
+puts "Updated quantity for grocery list:"
+p update_quantity(grocery_items, "Lemonade", 2)
+p update_quantity(grocery_items, "Tomatoes", 3)
+p update_quantity(grocery_items, "Onions", 1)
+p update_quantity(grocery_items, "Ice Cream", 4)
+
+puts "Removing Lemonade from list:"
+p remove_item(grocery_items, "Lemonade")
+
+puts "Update Ice Cream quantity"
+p update_quantity(grocery_items, "Ice Cream", 1)
+
 p pretty_list(grocery_items)
-
-
-
-
-
