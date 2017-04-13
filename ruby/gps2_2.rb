@@ -97,13 +97,13 @@ end
 puts "Here is our grocery list"
 p create_list(grocery_list)
 
-puts "Updated quantity for grocery list:"
+puts "Update quantity for each item in grocery list:"
 p update_quantity(grocery_items, "Lemonade", 2)
 p update_quantity(grocery_items, "Tomatoes", 3)
 p update_quantity(grocery_items, "Onions", 1)
 p update_quantity(grocery_items, "Ice Cream", 4)
 
-puts "Removing Lemonade from list:"
+puts "Remove Lemonade from grocery list:"
 p remove_item(grocery_items, "Lemonade")
 
 puts "Update Ice Cream quantity"
@@ -111,13 +111,27 @@ p update_quantity(grocery_items, "Ice Cream", 1)
 
 p pretty_list(grocery_items)
 
+
+##--- RELEASE 4: REFLECT --# 
+
 =begin
   
 What did you learn about pseudocode from working on this challenge?
+- It makes creating methods so much easier because you know what your input should be and you know what you want out of the method return. It definitely saved us a lot of time of pondering what our methods should take as arguments. 
+
 What are the tradeoffs of using arrays and hashes for this challenge?
+- The tradeoff's are there were methods that can only be called on either a hash or only on an array and I kept mixing up which belonged to what. 
+
 What does a method return?
+- A method returns the value of the last statement in that method. 
+
 What kind of things can you pass into methods as arguments?
+- Strings, numbers, hashes, arrays
+
 How can you pass information between methods?
+- You can pass information in between methods by assigning the return values as a new variables. An example of this is when we assigned grocery_items as being the return value of our new list. 
+
 What concepts were solidified in this challenge, and what concepts are still confusing?
+- The biggest thing I took away from this is passing information between methods. I constantly get the "undefined local variable" error and that because I'm trying to use a variable from a previous method. So happy to have that locked down. I still need to work on getting ruby syntax down and not mixing up the different ways of going about doing something. 
   
 =end
