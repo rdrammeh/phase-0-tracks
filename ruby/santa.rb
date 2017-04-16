@@ -1,5 +1,10 @@
 ##-- RELEASE 0: BRING SANTA TO LIFE --#
 
+class Santa
+
+#-- RELEASE 3: REFACTOR --# 
+  attr_reader :age, :ethnicity
+  attr_accessor :gender, :name
 
 #-- RELEASE 1: GIVE SANTA ATTRIBUTES FOR CHRISTMAS --#  
   def initialize(gender, ethnicity, age)
@@ -15,6 +20,7 @@
   def eat_milk_and_cookies(cookie_type)
     puts "That was a good #{cookie_type} cookie!"
   end
+  
 #-- RELEASE 2: CHANGE AN ATTRIBUTE WITH A METHOD --#  
   def celebrate_birthday
     @age + 1
