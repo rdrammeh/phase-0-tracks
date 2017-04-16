@@ -7,4 +7,11 @@ class Dancer
     @age = age 
   end
 
+  def pirouette
+    "*twirls*"
+  end
+
+  def bow 
+    "*bows*"
+  end
 end
