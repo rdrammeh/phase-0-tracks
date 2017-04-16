@@ -37,4 +37,9 @@ describe Dancer do
     expect(dancer.begin_next_dance).to eq "Now dancing with Mikhail Baryshnikov."
     expect(dancer.card).to eq ["Anna Pavlova"]
   end
+
+  it "assigns tutu color to next dancer in queue" do
+    dancer.queue_dance_with("Rakey Drammeh")
+    expect(dancer.tutu_color).to eq "Tutu color should be pink."
+  end
 end
