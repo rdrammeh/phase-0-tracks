@@ -20,7 +20,7 @@ class Santa
   def eat_milk_and_cookies(cookie_type)
     puts "That was a good #{cookie_type} cookie!"
   end
-  
+
 #-- RELEASE 2: CHANGE AN ATTRIBUTE WITH A METHOD --#  
   def celebrate_birthday
     @age + 1
@@ -75,6 +75,17 @@ end
   # puts santas[i].ethnicity
 # end
 
+#-- RELEASE 4: BUILD MANY SANTAS --#
+santas = []
+gender_examples = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+ethnicity_examples = ["black", "Latino", "white", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+age_options = (0..140).to_a
+
+100.times do 
+  santas << Santa.new(gender_examples.sample, ethnicity_examples.sample, age_options.sample)
+  puts "This santa identifies as #{gender_examples.sample} and #{ethnicity_examples.sample} and is #{age_options.sample} years old."
+  puts " "
+end
 
 
   
