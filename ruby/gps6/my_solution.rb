@@ -10,12 +10,14 @@ require_relative 'state_data'
 
 class VirusPredictor
 
+ #Initializing class and assigns the 3 instance variables and taking in the 3 parameters.
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
+#works as a runner method by calling two methods 
   def virus_effects
     predicted_deaths
     speed_of_spread
@@ -23,6 +25,8 @@ class VirusPredictor
 
   private
 
+  #creates conditional statements and returns number_of_deaths
+  #based on the value of population density.
   def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -41,6 +45,8 @@ class VirusPredictor
 
   end
 
+  #creates conditional statements and returns speed of spread
+  #based on the value of population density.
   def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
