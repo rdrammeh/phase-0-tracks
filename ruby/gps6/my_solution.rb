@@ -5,7 +5,7 @@
 
 # EXPLANATION OF require_relative
 # require_relative pulls in a file within out current directory 
-# require pulls in a file from our Ruby batch and requires that file
+# require reaches out to the ruby path to require a file.
 require_relative 'state_data'
 
 class VirusPredictor
@@ -112,3 +112,21 @@ end
 
 #=======================================================================
 # Reflection Section
+
+=begin
+1. What are the differences between the two different hash syntaxes shown in the state_data file?
+The difference between the two different hash syntaxes is that one is a string and value pair and the sub-hash is a key value pair. 
+
+2. What does require_relative do? How is it different from require?
+Require relative pulls in code from a file that is within the same directory as the file you're currently working on. It's different from require because require reaches out to the ruby path to require a file.
+
+3. What are some ways to iterate through a hash?
+You can use .each, .each_key and .each_value. 
+
+4. When refactoring virus_effects, what stood out to you about the variables, if anything?
+Those variables were all instance variables meaning that they are readable and writable throughout the class. 
+
+5. What concept did you most solidify in this challenge?
+Looking at hashes and understanding how to read their context despite having sub-content. 
+
+=end
