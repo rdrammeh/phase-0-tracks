@@ -10,4 +10,13 @@ function reverse(word) {
   console.log(new_word);
 }
 
+// Reverse a word
 reverse("hello");
+reverse("javascript");
+
+// Print the variable if some condition is true 
+if (1 == 1) {
+  reverse("willywonka");
+} else {
+  console.log("Ohhhhh Javascript!")
+}
