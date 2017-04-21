@@ -3,10 +3,11 @@
 // 2. Use the reverse method on that array and store that in a new variable 
 // 3. Put the letter back together to show the final word
 
-//function reverse(word) {
-//  var word_arr = word.split('');
-//  var reversed_word = word_arr.reverse();
-//  var reversed_word.join();
-//}
-//
-//console.log(reverse("hello"))
+function reverse(word) {
+  var word_arr = word.split('');
+  var reversed_arr = word_arr.reverse();
+  var new_word = reversed_arr.join();
+  console.log(new_word);
+}
+
+reverse("hello");
