@@ -6,7 +6,7 @@
 function reverse(word) {
   var word_arr = word.split('');
   var reversed_arr = word_arr.reverse();
-  var new_word = reversed_arr.join();
+  var new_word = reversed_arr.join('');
   console.log(new_word);
 }
 
