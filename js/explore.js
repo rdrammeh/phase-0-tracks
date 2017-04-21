@@ -18,5 +18,5 @@ reverse("javascript");
 if (1 == 1) {
   reverse("willywonka");
 } else {
-  console.log("Ohhhhh Javascript!")
+  console.log("Ohhhhh Javascript!");
 }
