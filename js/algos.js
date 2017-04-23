@@ -9,14 +9,14 @@ PSEUDOCODE FOR RELEASE 0
 
 var myArray = ["long phrase","longest phrase","longer phrase", "longestestestest phrase"];
 
-function longestPhrase() {
-  for (var i = 0; i < myArray.length; i++) {
-    if (myArray[i].length > myArray[i++].length) {
-      return myArray[i];
-    } else {
-      return myArray[i++];
+function longestPhrase(array) {
+  var longestWord = array[0]
+  for (var i = 0; i < array.length; i++) {
+    if (array[i].length > longestWord.length) {
+      longestWord = array[i];
     }
   }
+  return longestWord
 }
 
-console.log(longestPhrase());
+console.log(longestPhrase(myArray));
