@@ -106,7 +106,6 @@ function putItAllTogether() {
     console.log(longestPhrase(sample_array));
     console.log('');
   }
-  i + 1
 }
 
 putItAllTogether();
