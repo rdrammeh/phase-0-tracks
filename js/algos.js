@@ -95,6 +95,21 @@ function randomWords(number) {
 }
 
 console.log(randomWords(4));
+console.log(randomWords(8));
+
+function putItAllTogether() {
+  var sample_array = randomWords(4);
+  for (var i = 0; i < 10; i++) {
+    console.log('Here is an array of random words:')
+    console.log(sample_array);
+    console.log('The biggest word in that array is:')
+    console.log(longestPhrase(sample_array));
+    console.log('');
+  }
+  i + 1
+}
+
+putItAllTogether();
 
 
 
