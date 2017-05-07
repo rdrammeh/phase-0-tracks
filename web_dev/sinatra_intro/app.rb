@@ -44,3 +44,47 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+## write a /contact route 
+get '/contact' do 
+  "201 West 145 Street Apt 18, New York, NY 10039"
+end
+
+## great job 
+get '/great_job' do 
+  person_name = params[:person_name]
+  if person_name 
+    "Good job, #{person_name}."
+  else
+    "Good job!"
+  end
+end
+
+## add 
+get '/addition' do
+  result = params[:integer].to_i + params[:integer_2].to_i
+  result.to_s
+end
+
+## search database 
+get '/search' do
+  student_name = params[:student_name]
+  student_id = params[:student_id] 
+  campus = params[:campus]
+  if student_name
+    student = db.execute("SELECT * FROM students WHERE name=?", [params[:student_name]])
+    student.to_s
+  elsif student_id
+    student = db.execute("SELECT * FROM students WHERE id=?", [params[:student_id]])
+    student.to_s
+  else 
+    student = db.execute("SELECT students.name, students.age FROM students WHERE campus=?", [params[:campus]])
+    student.to_s
+  end
+end
+
+    
+    
+    
+
+
